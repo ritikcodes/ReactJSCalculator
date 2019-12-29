@@ -4,7 +4,7 @@ import Controls from '../Controls/Controls';
 
 class Calculator extends Component {
   state = {
-    result: '',
+    result: 0,
     operand: '',
     background: '',
     lastNumber: '' //for more than one digit Number
@@ -40,7 +40,7 @@ class Calculator extends Component {
     //Function to clear Display
     const clearResult = () => {
       this.setState({
-        result: '',
+        result: 0,
         operand: '',
         background: '',
         lastNumber: ''
