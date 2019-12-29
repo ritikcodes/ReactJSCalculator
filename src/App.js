@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import Calculator from './Calculator/Calculator';
+import ThemeControl from './ThemeControl/ThemeControl';
+class App extends Component {
+  state = {
+    lightTheme: 'true'
+  };
+  render() {
+    //Function to change Theme Look
+    const changeTheme = theme => {
+      this.setState({ lightTheme: theme });
+    };
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+      <section className={this.state.lightTheme ? 'lightTheme' : 'darkTheme'}>
+        <ThemeControl changeTheme={changeTheme} />
+        <Calculator />
+      </section>
+    );
+  }
 }
 
 export default App;
