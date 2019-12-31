@@ -1,12 +1,10 @@
 ## About 
 Calculator doesn't follow the BODMAS Rule.<br />
-.<br />
 This is a Simple Calculator Application.<br />
-.<br />
 Functionality was priority, not UI<br />
-.<br />
 Simple UI designed.
-
+## Try It
+https://itzhrithan.github.io/ReactJSCalculator/
 ## Available Scripts
 
 In the project directory, you can run:
