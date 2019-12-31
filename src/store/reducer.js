@@ -42,14 +42,16 @@ const reducer = (state = initialState, action) => {
         result: 0,
         operand: '',
         background: '',
-        lastNumber: ''
+        lastNumber: '',
+        lightTheme: state.lightTheme
       };
     case actionTypes.SHOW_RESULT:
       return {
         result: eval(background + operand + result),
         operand: '',
         background: '',
-        lastNumber: ''
+        lastNumber: '',
+        lightTheme: state.lightTheme
       };
     case actionTypes.CHANGE_THEME:
       return {
