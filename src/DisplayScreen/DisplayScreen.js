@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { connect } from 'react-redux';
 const DisplayScreen = props => (
   <>
     <input
@@ -10,5 +10,7 @@ const DisplayScreen = props => (
     />
   </>
 );
-
-export default DisplayScreen;
+const stateToProps = state => {
+  return { result: state.result };
+};
+export default connect(stateToProps)(DisplayScreen);

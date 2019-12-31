@@ -32,7 +32,6 @@ html {
   width: 100%;
   height: 80px;
   border: 1px solid grey;
-
   text-align: right;
   padding-right: 20px;
   padding-left: 10px;
@@ -58,27 +57,45 @@ button {
 .lightTheme {
   background: #fff;
   color: #000;
+  padding: 60px;
+
+  transition: all ease 0.3;
 }
 .lightTheme button {
   background: #f0f0f0;
+  transition: all ease 0.3;
 }
 .lightTheme .calculator {
   background-color: #fff;
+  transition: all ease 0.3;
 }
 .lightTheme input {
   background-color: #fff;
+  transition: all ease 0.3;
 }
 
 .darkTheme {
   background-color: #000;
   color: #fff;
+  padding: 60px;
+  transition: all ease 0.3;
 }
 .darkTheme button {
   background: #666;
+  transition: all ease 0.3;
 }
 .darkTheme .calculator {
   background-color: #000;
+  transition: all ease 0.3;
 }
 .darkTheme input {
   background-color: #000;
+  transition: all ease 0.3;
+}
+button {
+  font-size: 13px !important;
+  padding: 0 15px;
+}
+.themeButton {
+  height: 50px;
 }
