@@ -1,4 +1,11 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## About 
+Calculator doesn't follow the BODMAS Rule.<br />
+.<br />
+This is a Simple Calculator Application.<br />
+.<br />
+Functionality was priority, not UI<br />
+.<br />
+Simple UI designed.
 
 ## Available Scripts
 
